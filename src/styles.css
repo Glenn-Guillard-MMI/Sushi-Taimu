@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Hiragino;
+    src: url("assets/font/Hiragino_Sans.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hiragino';
+}
+
+body {
+    background: #FEF0E0;
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
