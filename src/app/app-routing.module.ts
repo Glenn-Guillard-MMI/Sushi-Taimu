@@ -4,7 +4,7 @@ import { SectionIndexComponent } from './component/section-index/section-index.c
 import { SectionMenuComponent } from './component/section-menu/section-menu.component';
 
 const routes: Routes = [
-  {path: 'index', component: SectionIndexComponent},
+  {path: '', component: SectionIndexComponent},
   {path: 'menu', component: SectionMenuComponent}
 ];
 
