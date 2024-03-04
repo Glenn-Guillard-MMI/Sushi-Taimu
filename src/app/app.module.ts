@@ -11,7 +11,14 @@ import { SectionMenuComponent } from './component/section-menu/section-menu.comp
 import { SaumonComponent } from './component/saumon/saumon.component';
 
 @NgModule({
-  declarations: [AppComponent, ProduitComponent, HeaderComponent, SectionIndexComponent, SectionMenuComponent, SaumonComponent],
+  declarations: [
+    AppComponent,
+    ProduitComponent,
+    HeaderComponent,
+    SectionIndexComponent,
+    SectionMenuComponent,
+    SaumonComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
