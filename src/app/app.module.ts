@@ -9,6 +9,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { SectionIndexComponent } from './component/section-index/section-index.component';
 import { SectionMenuComponent } from './component/section-menu/section-menu.component';
 import { SaumonComponent } from './component/saumon/saumon.component';
+import { ThonComponent } from './component/thon/thon.component';
+import { AvocatComponent } from './component/avocat/avocat.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { SaumonComponent } from './component/saumon/saumon.component';
     SectionIndexComponent,
     SectionMenuComponent,
     SaumonComponent,
+    ThonComponent,
+    AvocatComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

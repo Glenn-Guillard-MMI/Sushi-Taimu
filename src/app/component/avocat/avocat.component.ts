@@ -3,11 +3,11 @@ import { GetAPIService } from '../../service/get-api.service';
 import { PanierService } from '../../service/panier.service';
 
 @Component({
-  selector: 'app-saumon',
-  templateUrl: './saumon.component.html',
-  styleUrl: './saumon.component.css',
+  selector: 'app-avocat',
+  templateUrl: './avocat.component.html',
+  styleUrl: './avocat.component.css',
 })
-export class SaumonComponent implements OnInit {
+export class AvocatComponent implements OnInit {
   constructor(private get: GetAPIService, private Panier: PanierService) {}
   data: any[] = [];
 
