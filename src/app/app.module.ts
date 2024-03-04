@@ -8,9 +8,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './component/header/header.component';
 import { SectionIndexComponent } from './component/section-index/section-index.component';
 import { SectionMenuComponent } from './component/section-menu/section-menu.component';
+import { SaumonComponent } from './component/saumon/saumon.component';
 
 @NgModule({
-  declarations: [AppComponent, ProduitComponent, HeaderComponent, SectionIndexComponent, SectionMenuComponent],
+  declarations: [AppComponent, ProduitComponent, HeaderComponent, SectionIndexComponent, SectionMenuComponent, SaumonComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
