@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GetAPIService } from '../../service/get-api.service';
+import { PanierService } from '../../service/panier.service';
 
 @Component({
   selector: 'app-saumon',
@@ -7,12 +8,16 @@ import { GetAPIService } from '../../service/get-api.service';
   styleUrl: './saumon.component.css',
 })
 export class SaumonComponent implements OnInit {
-  constructor(private get: GetAPIService) {}
+  constructor(private get: GetAPIService, private Panier: PanierService) {}
   data: any[] = [];
 
   ngOnInit(): void {
     this.get.getAPIService().subscribe((contenue) => {
       this.data = contenue;
     });
+  }
+
+  add() {
+    this.Panier.add();
   }
 }
