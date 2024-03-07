@@ -9,6 +9,6 @@ export class GetAPIService {
   constructor(private http: HttpClient) {}
 
   public getAPIService(): Observable<any> {
-    return this.http.get('http://localhost:4500/box');
+    return this.http.get('http://localhost:3000/box');
   }
 }
