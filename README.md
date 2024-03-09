@@ -1,27 +1,31 @@
-# Urgent
+# Présentation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+Ce projet a été lancé le 13 février 2024 dans le cadre d'un projet de SAE (Situation d'Apprentissage et d'Évaluation). L'objectif est de concevoir une application de commande de sushi, inspirée du style des bornes de commandes de McDonald's via une API REST.
 
-## Development server
+Nous avons également reçu un [cahier des charges](documentation/CDC.pdf) pour respecter au mieux les critères de ce projet.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Membres du groupe
 
-## Code scaffolding
+### Glenn Guillard
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Glenn Guillard est le chef de groupe. Il est chargé de veiller au respect des délais pour chaque livrable. De plus, il prend en charge la partie Front-end de l'application en collaboration avec Thomas Henry. Glenn est responsable du bon fonctionnement de l'application du côté Front-end.
 
-## Build
+### Jérôme Fabre
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Jérôme Fabre est en charge du développement de l'API REST. À cette fin, il a créé un [GitHub](https://github.com/JeromeFabre77/Shushi-Taimu_REST-API_NodeJS) pour une gestion plus efficace de son API.
 
-## Running unit tests
+### Thomas Henry
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Thomas Henry s'occupe également de la partie Front-end, plus spécifiquement de l'aspect esthétique du site (CSS), sous la direction de Valentin Lamour.
 
-## Running end-to-end tests
+### Valentin Lamour
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Enfin, Valentin Lamour est responsable du maquettage du site, ainsi que du choix du nom de l'application, des produits, etc.
 
-## Further help
+## Gestion des livrables
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![](documentation/Trello.png)
+
+La gestion des livrables est effectuée via Trello pour faciliter les modifications en cas de problème. Elle est supervisée par le chef de groupe, Glenn Guillard.
+
+Lien du trello : [trello](https://trello.com/b/rNJzcP8y/sushi)
