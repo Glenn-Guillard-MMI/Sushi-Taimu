@@ -22,10 +22,32 @@ Thomas Henry s'occupe également de la partie Front-end, plus spécifiquement de
 
 Enfin, Valentin Lamour est responsable du maquettage du site, ainsi que du choix du nom de l'application, des produits, etc.
 
-## Gestion des livrables
+# Gestion des livrables
 
-![](documentation/Trello.png)
+![Trello](documentation/Trello.png)
 
 La gestion des livrables est effectuée via Trello pour faciliter les modifications en cas de problème. Elle est supervisée par le chef de groupe, Glenn Guillard.
 
 Lien du trello : [trello](https://trello.com/b/rNJzcP8y/sushi)
+
+# Nom et Maquette
+
+## Nom
+
+Au tout début du projet, Valentin Lamour était chargé de trouver un nom pour cette application. Suite à plusieurs propositions, le nom "Sushi Taimu" a été adopté.
+
+Ce nom a la signification suivante : "L'heure des sushis" (スシタイム).
+
+## Maquette
+
+### Palette de couleurs
+
+![Palette de couleurs](documentation/paletteCouleur.png)
+
+Avant de commencer la maquette du site Sushi Taimu, Valentin Lamour a d'abord choisi une palette de couleurs afin de déterminer les couleurs qui seront utilisées sur le site. Il a donc sélectionné la palette de couleurs ci-dessus.
+
+### Maquette
+
+Par la suite, il a créé un fichier Figma afin de permettre l'accès aux autres membres du groupe.
+
+Lien du Figma : [Figma](https://www.figma.com/file/gKZc007oUOffFvB1XhPsUc/Sushi-Taimu?type=design&node-id=0%3A1&mode=design&t=ze8ulIGCl7sPpjEc-1)
