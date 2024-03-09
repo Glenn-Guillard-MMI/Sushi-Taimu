@@ -48,6 +48,21 @@ Avant de commencer la maquette du site Sushi Taimu, Valentin Lamour a d'abord ch
 
 ### Maquette
 
+![maquette](documentation/maquette.png)
+
 Par la suite, il a créé un fichier Figma afin de permettre l'accès aux autres membres du groupe.
 
 Lien du Figma : [Figma](https://www.figma.com/file/gKZc007oUOffFvB1XhPsUc/Sushi-Taimu?type=design&node-id=0%3A1&mode=design&t=ze8ulIGCl7sPpjEc-1)
+
+# API
+
+## Conceptualisation de la base
+
+![Conceptualisation de la base](documentation/Conceptualisation_base.png)
+
+Avant que Jérôme Fabre puisse commencer l'API, il a d'abord dû réaliser la conceptualisation de la base de données afin de définir le fonctionnement de la base et les interactions entre chaque table. Vous trouverez la conceptualisation de la base ci-dessus.
+
+## API REST
+
+Jérôme Fabre a choisi d'utiliser le langage Node.ts afin de sortir de sa zone de confort. Il a donc dû apprendre tout le langage Node afin de réussir à créer l'API.
+L'API est disponible sur le GitHub suivant : [GitHub](https://github.com/JeromeFabre77/Shushi-Taimu_REST-API_NodeJS)
