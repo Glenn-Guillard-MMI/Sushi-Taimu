@@ -11,6 +11,7 @@ import { SectionMenuComponent } from './component/section-menu/section-menu.comp
 import { SaumonComponent } from './component/saumon/saumon.component';
 import { ThonComponent } from './component/thon/thon.component';
 import { AvocatComponent } from './component/avocat/avocat.component';
+import { SaveursComponent } from './component/saveurs/saveurs.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AvocatComponent } from './component/avocat/avocat.component';
     SaumonComponent,
     ThonComponent,
     AvocatComponent,
+    SaveursComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
