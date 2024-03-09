@@ -6,6 +6,7 @@ import { ProduitComponent } from './component/produit/produit.component';
 import { SaumonComponent } from './component/saumon/saumon.component';
 import { ThonComponent } from './component/thon/thon.component';
 import { AvocatComponent } from './component/avocat/avocat.component';
+import { SaveursComponent } from './component/saveurs/saveurs.component';
 
 const routes: Routes = [
   { path: '', component: SectionIndexComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'produit', component: ProduitComponent },
   { path: 'saumon', component: SaumonComponent },
   { path: 'thon', component: ThonComponent },
-  { path: 'avocat', component: AvocatComponent }
+  { path: 'avocat', component: AvocatComponent },
+  { path: 'saveurs', component: SaveursComponent },
 ];
 
 @NgModule({

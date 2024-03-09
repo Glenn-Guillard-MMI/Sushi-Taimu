@@ -5,9 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './section-menu.component.html',
   styleUrl: './section-menu.component.css',
 })
-export class SectionMenuComponent{
-
+export class SectionMenuComponent {
   public saumon() {
     console.log('Please select');
+  }
+
+  public Saveurs(NomDeLaSaveur: string) {
+    localStorage.setItem('Saveurs', NomDeLaSaveur);
   }
 }
