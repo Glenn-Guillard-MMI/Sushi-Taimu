@@ -1,22 +1,37 @@
 <div id="container-top">
   <a id="back" routerLink="/menu">
-    <p class="text-back"><</p>
+    <p class="text-back">&lt;</p>
     <p class="text-back">Retour</p>
   </a>
   <h1>{{ Saveur }}</h1>
 </div>
-<div id="container-box">
+<!-- <div id="container-box">
   <div *ngFor="let item of data" class="testtest">
     <div *ngFor="let aliment of item.saveurs">
       <div *ngIf="aliment.nom == GetMySaveur()">
         <a href="https://www.youtube.com">
-          <img
-            src="https://guillard.alwaysdata.net/Sushi-taimu/Plat/{{
+          <img src="https://guillard.alwaysdata.net/Sushi-taimu/Plat/{{
               item.image
-            }}.png"
-            alt="box-{{ item.nom }}"
-            class="img-box"
-          />
+            }}.png" alt="box-{{ item.nom }}" class="img-box" />
+        </a>
+        <div class="name">{{ item.nom }}</div>
+        <div class="price">{{ item.prix }} €</div>
+        <button (click)="add(item.nom)" class="button-add">+</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+<a href="" id="cart">
+  <img src="../../../assets/icon/cart.svg" alt="panier" />
+  <p>{{ GetPanier()}}</p>
+</a>
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 1em; justify-content: center;">
+  <div *ngFor="let item of data">
+    <div *ngFor="let aliment of item.saveurs" style="position: relative;">
+      <div *ngIf="aliment.nom == GetMySaveur()" style="width: 20vw;">
+        <a href="https://www.youtube.com">
+          <img src="https://guillard.alwaysdata.net/Sushi-taimu/Plat/{{ item.image }}.png" alt="box-{{ item.nom }}"
+            class="img-box" />
         </a>
         <div class="name">{{ item.nom }}</div>
         <div class="price">{{ item.prix }} €</div>
@@ -25,7 +40,3 @@
     </div>
   </div>
 </div>
-<a href="" id="cart">
-  <img src="../../../assets/icon/cart.svg" alt="panier" />
-  <p>{{ GetPanier()}}</p>
-</a>
