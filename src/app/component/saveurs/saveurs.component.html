@@ -25,10 +25,10 @@
   <img src="../../../assets/icon/cart.svg" alt="panier" />
   <p>{{ GetPanier()}}</p>
 </a>
-<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 1em; justify-content: center;">
+<div class="container-box">
   <div *ngFor="let item of data">
-    <div *ngFor="let aliment of item.saveurs" style="position: relative;">
-      <div *ngIf="aliment.nom == GetMySaveur()" style="width: 20vw;">
+    <div *ngFor="let aliment of item.saveurs" class="mini-container">
+      <div *ngIf="aliment.nom == GetMySaveur()" class="container-info">
         <a href="https://www.youtube.com">
           <img src="https://guillard.alwaysdata.net/Sushi-taimu/Plat/{{ item.image }}.png" alt="box-{{ item.nom }}"
             class="img-box" />
