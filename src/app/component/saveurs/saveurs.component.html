@@ -6,7 +6,7 @@
   <h1>{{ Saveur }}</h1>
 </div>
 <div id="container-box">
-  <div *ngFor="let item of data">
+  <div *ngFor="let item of data" class="testtest">
     <div *ngFor="let aliment of item.saveurs">
       <div *ngIf="aliment.nom == GetMySaveur()">
         <a href="https://www.youtube.com">
@@ -27,5 +27,5 @@
 </div>
 <a href="" id="cart">
   <img src="../../../assets/icon/cart.svg" alt="panier" />
-  <p>0</p>
+  <p>{{ GetPanier()}}</p>
 </a>

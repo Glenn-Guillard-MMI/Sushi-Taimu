@@ -13,4 +13,8 @@ export class SectionMenuComponent {
   public Saveurs(NomDeLaSaveur: string) {
     localStorage.setItem('Saveurs', NomDeLaSaveur);
   }
+
+  GetPanier(){
+    return localStorage.getItem('valuePanier')
+  }
 }
