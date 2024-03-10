@@ -25,4 +25,8 @@ export class SaveursComponent implements OnInit {
   add(value: any) {
     this.Panier.add(value);
   }
+
+  GetPanier(){
+    return localStorage.getItem('valuePanier')
+  }
 }
