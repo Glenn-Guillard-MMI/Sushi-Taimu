@@ -14,6 +14,7 @@ import { AvocatComponent } from './component/avocat/avocat.component';
 import { SaveursComponent } from './component/saveurs/saveurs.component';
 import { AchatProduitComponent } from './component/achat-produit/achat-produit.component';
 import { CategorieComponent } from './component/categorie/categorie.component';
+import { PanierComponent } from './component/panier/panier.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { CategorieComponent } from './component/categorie/categorie.component';
     SaveursComponent,
     AchatProduitComponent,
     CategorieComponent,
+    PanierComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

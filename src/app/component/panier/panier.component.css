@@ -1,0 +1,28 @@
+#bg{
+    user-select: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.291);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    display: none;
+}
+#panier{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40vw;
+    height: 100vh;
+    background: blue;
+    transition: left 0.25s ease;
+    display: none;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+}

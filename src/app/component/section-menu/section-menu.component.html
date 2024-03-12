@@ -5,12 +5,12 @@
         <p class="menu-name">Saumon</p>
       </div>
     </a>
-    <a routerLink="/composition" class="div2" (click)="composition('sushi')">
+    <a routerLink="/composition" class="div2" (click)="composition('Sushi')">
       <div>
         <p class="menu-name">Sushi</p>
       </div>
     </a>
-    <a href="" class="div3">
+    <a routerLink="/composition" class="div3" (click)="composition('Springs Rolls')">
       <div>
         <p class="menu-name">Spring Rolls</p>
       </div>
@@ -20,7 +20,7 @@
         <p class="menu-name">Boisson</p>
       </div>
     </a>
-    <a href="" class="div5">
+    <a routerLink="/composition" class="div5" (click)="composition('Maki')">
       <div>
         <p class="menu-name">Maki</p>
       </div>
@@ -35,14 +35,14 @@
         <p class="menu-name">Avocat</p>
       </div>
     </a>
-    <a href="" class="div8">
+    <a routerLink="/composition" class="div8" (click)="composition('California Rolls')">
       <div>
         <p class="menu-name">California Rolls</p>
       </div>
     </a>
   </article>
 </section>
-<a href="" id="cart">
+<div (click)="open()" id="cart">
   <img src="../../../assets/icon/cart.svg" alt="panier" />
   <p>{{ GetPanier() }}</p>
-</a>
+</div>

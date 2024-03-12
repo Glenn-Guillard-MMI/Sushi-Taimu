@@ -1,0 +1,142 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 5%;
+}
+
+#container-left,
+#container-right {
+    width: 50%;
+}
+
+#container-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-left img {
+    width: 65%;
+    filter: drop-shadow(0px 4px 25px #00000066);
+}
+
+#container-choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: 2%;
+}
+
+ul {
+    margin-left: 2vw;
+}
+
+h1 {
+    color: #333333;
+    font-size: 2.5vw;
+}
+
+h2 {
+    color: #90322B;
+    margin-top: 1.5%;
+}
+
+#saveurs {
+    display: flex;
+    flex-direction: row;
+}
+
+#saveurs p {
+    margin-top: 2%;
+    margin-right: 2%;
+    background: #333333;
+    color: #FEF0E0;
+    padding: 0.5vw 1vw;
+    border-radius: 10px;
+}
+
+#button-minus,
+#button-plus {
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5vw;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    user-select: none;
+}
+
+#button-minus {
+    color: #DC6157;
+    background: transparent;
+    border: #DC6157 solid 2px;
+    margin-right: 2%;
+}
+
+#button-plus {
+    background: #DC6157;
+    color: #FEF0E0;
+    border: none;
+    margin-left: 2%;
+}
+
+#NumberProduit {
+    font-size: 1.5vw;
+}
+
+#submit{
+    margin-top: 2%;
+    padding: 0.5vw 1vw;
+    background: #DC6157;
+    color: #FEF0E0;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.5vw;
+    user-select: none;
+}
+
+#compo{
+    margin-top: 2%;
+}
+
+#sav{
+    margin-top: 2%;
+}
+
+#back {
+    border: 1px solid #333333;
+    background: transparent;
+    width: fit-content;
+    margin: 2em 0;
+    border-radius: 15px;
+    transition: background 250ms ease-in-out;
+    margin-left: 2.5%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em 1em;
+  }
+  
+  .text-back {
+    color: #333333;
+  }
+  
+  #back p:first-child {
+    margin-right: 1em;
+  }
+  
+  #back:hover {
+    background: #fef0e0;
+  }
+  
+  #container-top {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }

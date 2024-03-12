@@ -22,4 +22,13 @@ export class SectionMenuComponent {
       return ValuePanier;
     }
   }
+
+  open() {
+    const bg = document.getElementById('bg')
+    const panier = document.getElementById('panier')
+    if (bg && panier) {
+      bg.style.display = 'block'
+      panier.style.display = 'block'
+    }
+  }
 }

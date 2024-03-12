@@ -1,13 +1,34 @@
+<div id="container-top">
+  <a id="back" routerLink="/menu">
+    <p class="text-back">&lt;</p>
+    <p class="text-back">Menu</p>
+  </a>
+</div>
+
 <div *ngFor="let item of data">
-  <div *ngIf="item.nom == GetMyProduit()">
-    <p>{{ item.nom }}</p>
-    <p>{{ item.prix }} €</p>
-    <button (click)="retirerNumberProduit()">-</button>
-    <p id="NumberProduit">1</p>
-    <button (click)="AjoutNumberProduit()">+</button>
-    <button (click)="add()" id="submit">Ajout du produit</button>
-    <div *ngFor="let aliment of item.aliments">
-      <p>{{ aliment.nom }}</p>
+  <div *ngIf="item.nom == GetMyProduit()" id="container">
+    <div id="container-left">
+      <img src="https://guillard.alwaysdata.net/Sushi-taimu/Plat/{{
+        item.image
+      }}.png" alt="box-{{ item.nom }}" class="img-box" />
+    </div>
+    <div id="container-right">
+      <h1>{{ item.nom }}</h1>
+      <h2>{{ item.prix }} €</h2>
+      <div id="container-choice">
+        <p id="button-minus" (click)="retirerNumberProduit()">-</p>
+        <p id="NumberProduit">1</p>
+        <p id="button-plus" (click)="AjoutNumberProduit()">+</p>
+      </div>
+      <button (click)="add()" id="submit">Ajouter au panier</button>
+      <p id="compo">Composition : </p>
+      <ul>
+        <li *ngFor="let aliment of item.aliments">{{ aliment.nom }}</li>
+      </ul>
+      <p id="sav">Saveurs : </p>
+      <div id="saveurs">
+        <p *ngFor="let saveurs of item.saveurs">{{ saveurs.nom }}</p>
+      </div>
     </div>
   </div>
 </div>

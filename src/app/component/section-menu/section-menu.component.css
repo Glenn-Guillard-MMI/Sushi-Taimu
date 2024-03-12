@@ -134,6 +134,8 @@ a[class^="div"] {
     transition: background 300ms ease-out;
     width: 6vw;
     box-shadow: 0px 4px 28px 0px #0000004D;
+    cursor: pointer;
+    user-select: none;
 }
 
 #cart:hover {
