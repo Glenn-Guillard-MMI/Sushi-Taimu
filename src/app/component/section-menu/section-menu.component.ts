@@ -6,15 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './section-menu.component.css',
 })
 export class SectionMenuComponent {
-  public saumon() {
-    console.log('Please select');
-  }
-
   public Saveurs(NomDeLaSaveur: string) {
     localStorage.setItem('Saveurs', NomDeLaSaveur);
   }
 
-  GetPanier(){
-    return localStorage.getItem('valuePanier')
+  public composition(NomDeLaSaveur: string) {
+    localStorage.setItem('composition', NomDeLaSaveur);
+  }
+
+  GetPanier() {
+    const ValuePanier = localStorage.getItem('valuePanier');
+    if (ValuePanier == null) {
+      return 0;
+    } else {
+      return ValuePanier;
+    }
   }
 }

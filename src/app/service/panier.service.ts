@@ -11,7 +11,7 @@ export class PanierService {
       const myValue: any = localStorage.getItem('valuePanier');
       if (myValue < 10) {
         if (myValue == null) {
-          localStorage.setItem('valuePanier', '1');
+          localStorage.setItem('valuePanier', quantite || 1);
           const TheValue: any = { 1: { nom: value, quantite: quantite || 1 } };
           localStorage.setItem('InMyPanier', JSON.stringify(TheValue));
         } else {
@@ -21,7 +21,7 @@ export class PanierService {
             if (json[key].nom == value) {
               json[key].quantite += quantite || 1;
               localStorage.setItem('InMyPanier', JSON.stringify(json));
-              const MyNewValue: any = parseInt(myValue, 10) + 1;
+              const MyNewValue: any = parseInt(myValue, 10) + (quantite || 1);
               localStorage.setItem('valuePanier', MyNewValue.toString());
               return true;
             }
