@@ -12,6 +12,8 @@ import { SaumonComponent } from './component/saumon/saumon.component';
 import { ThonComponent } from './component/thon/thon.component';
 import { AvocatComponent } from './component/avocat/avocat.component';
 import { SaveursComponent } from './component/saveurs/saveurs.component';
+import { AchatProduitComponent } from './component/achat-produit/achat-produit.component';
+import { CategorieComponent } from './component/categorie/categorie.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { SaveursComponent } from './component/saveurs/saveurs.component';
     ThonComponent,
     AvocatComponent,
     SaveursComponent,
+    AchatProduitComponent,
+    CategorieComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

@@ -1,0 +1,13 @@
+<div *ngFor="let item of data">
+  <div *ngIf="item.nom == GetMyProduit()">
+    <p>{{ item.nom }}</p>
+    <p>{{ item.prix }} €</p>
+    <button (click)="retirerNumberProduit()">-</button>
+    <p id="NumberProduit">1</p>
+    <button (click)="AjoutNumberProduit()">+</button>
+    <button (click)="add()" id="submit">Ajout du produit</button>
+    <div *ngFor="let aliment of item.aliments">
+      <p>{{ aliment.nom }}</p>
+    </div>
+  </div>
+</div>

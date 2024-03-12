@@ -3,14 +3,14 @@ import { GetAPIService } from '../../service/get-api.service';
 import { PanierService } from '../../service/panier.service';
 
 @Component({
-  selector: 'app-saveurs',
-  templateUrl: './saveurs.component.html',
-  styleUrl: './saveurs.component.css',
+  selector: 'app-categorie',
+  templateUrl: './categorie.component.html',
+  styleUrl: './categorie.component.css',
 })
-export class SaveursComponent implements OnInit {
+export class CategorieComponent implements OnInit {
   constructor(private get: GetAPIService, private Panier: PanierService) {}
   data: any[] = [];
-  Saveur = localStorage.getItem('Saveurs');
+  Saveur = localStorage.getItem('composition');
 
   ngOnInit(): void {
     this.get.getAPIService().subscribe((contenue) => {
@@ -18,7 +18,7 @@ export class SaveursComponent implements OnInit {
     });
   }
 
-  GetMySaveur() {
+  GetMyCompo() {
     return this.Saveur;
   }
 
