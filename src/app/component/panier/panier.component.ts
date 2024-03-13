@@ -7,11 +7,14 @@ import { Component } from '@angular/core';
 })
 export class PanierComponent {
   close() {
-    const bg = document.getElementById('bg')
-    const panier = document.getElementById('panier')
-    if (bg && panier) {
-      bg.style.display = 'none'
-      panier.style.display = 'none'
-    }
+  const bg = document.getElementById('bg')
+  const panier = document.getElementById('panier')
+  const container = document.getElementById('container_panier')
+  if (bg && panier && container) {
+    bg.style.display = 'none'
+    panier.style.display = 'none'
+    panier.style.transition = 'left 250ms ease'
+    container.style.scale = '0'
   }
+}
 }

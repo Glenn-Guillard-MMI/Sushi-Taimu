@@ -15,4 +15,15 @@ export class ProduitComponent implements OnInit {
       this.data = contenue;
     });
   }
+
+  open() {
+    const bg = document.getElementById('bg')
+    const panier = document.getElementById('panier')
+    const container = document.getElementById('container_panier')
+    if (bg && panier && container) {
+      bg.style.display = 'block'
+      panier.style.display = 'block'
+      container.style.scale = '1'
+    }
+  }
 }
