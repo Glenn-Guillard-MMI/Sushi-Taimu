@@ -99,6 +99,12 @@ h2 {
     border: none;
     font-size: 1.5vw;
     user-select: none;
+    cursor: pointer;
+}
+
+#submit:disabled{
+    background: #48201c;
+    cursor: not-allowed;
 }
 
 #compo{
