@@ -38,4 +38,15 @@ export class SaveursComponent implements OnInit {
   ProduitSelected(produit: string) {
     localStorage.setItem('produitSelected', produit);
   }
+
+  open() {
+    const bg = document.getElementById('bg')
+    const panier = document.getElementById('panier')
+    const container = document.getElementById('container_panier')
+    if (bg && panier && container) {
+      bg.style.display = 'block'
+      panier.style.display = 'block'
+      container.style.scale = '1'
+    }
+  }
 }

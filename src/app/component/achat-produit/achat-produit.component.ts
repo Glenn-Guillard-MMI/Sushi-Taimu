@@ -61,4 +61,24 @@ export class AchatProduitComponent implements OnInit {
       MySubmit!.disabled = true;
     }
   }
+
+  open() {
+    const bg = document.getElementById('bg')
+    const panier = document.getElementById('panier')
+    const container = document.getElementById('container_panier')
+    if (bg && panier && container) {
+      bg.style.display = 'block'
+      panier.style.display = 'block'
+      container.style.scale = '1'
+    }
+  }
+
+  GetPanier() {
+    const ValuePanier = localStorage.getItem('valuePanier');
+    if (ValuePanier == null) {
+      return 0;
+    } else {
+      return ValuePanier;
+    }
+  }
 }

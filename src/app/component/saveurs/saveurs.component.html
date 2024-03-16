@@ -21,10 +21,10 @@
     </div>
   </div>
 </div> -->
-<a href="" id="cart">
+<div (click)="open()" id="cart">
   <img src="../../../assets/icon/cart.svg" alt="panier" />
   <p>{{ GetPanier() }}</p>
-</a>
+</div>
 <div class="container-box">
   <div *ngFor="let item of data">
     <div *ngFor="let aliment of item.saveurs" class="mini-container">
