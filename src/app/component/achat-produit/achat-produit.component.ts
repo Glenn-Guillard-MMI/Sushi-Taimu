@@ -46,10 +46,12 @@ export class AchatProduitComponent implements OnInit {
   }
   add() {
     const myProduit = document.getElementById('NumberProduit');
+    const myPrix = document.getElementById('MonPrix');
     const numberActuel = parseInt(myProduit!.innerText, 10);
+    const prixActuel = parseFloat(myPrix!.innerText);
     myProduit!.innerText = '1';
     if (this.Panier) {
-      this.Panier.add(this.produit, numberActuel);
+      this.Panier.add(this.produit, prixActuel, numberActuel);
       this.bloque();
     }
   }
@@ -63,14 +65,15 @@ export class AchatProduitComponent implements OnInit {
   }
 
   open() {
-    const bg = document.getElementById('bg')
-    const panier = document.getElementById('panier')
-    const container = document.getElementById('container_panier')
+    const bg = document.getElementById('bg');
+    const panier = document.getElementById('panier');
+    const container = document.getElementById('container_panier');
     if (bg && panier && container) {
-      bg.style.display = 'block'
-      panier.style.display = 'block'
-      container.style.scale = '1'
+      bg.style.display = 'block';
+      panier.style.display = 'block';
+      container.style.scale = '1';
     }
+    this.Panier.PannierView();
   }
 
   GetPanier() {
