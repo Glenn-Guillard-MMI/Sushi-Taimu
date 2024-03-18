@@ -14,13 +14,17 @@
     <div class="mini-container">
       <div *ngIf="item.categorie == GetMyCompo()" class="container-info">
         <a routerLink="/Mon-produit" (click)="ProduitSelected(item.nom)">
-          <img src="https://guillard.alwaysdata.net/Sushi-taimu/Plat/{{
-            item.image
-          }}.png" alt="box-{{ item.nom }}" class="img-box" />
+          <img
+            src="https://guillard.alwaysdata.net/Sushi-taimu/Plat/{{
+              item.image
+            }}.png"
+            alt="box-{{ item.nom }}"
+            class="img-box"
+          />
         </a>
         <div class="name">{{ item.nom }}</div>
         <div class="price">{{ item.prix }} €</div>
-        <button (click)="add(item.nom)" class="button-add">+</button>
+        <button (click)="add(item.nom, item.prix)" class="button-add">+</button>
       </div>
     </div>
   </div>

@@ -1,6 +1,17 @@
 <div id="container_panier">
-    <section id="bg"></section>
-    <section id="panier">
-        <p (click)="close()">X</p>
-    </section>
+  <section id="bg"></section>
+  <section id="panier">
+    <p (click)="close()">X</p>
+    <div *ngFor="let item of Malister">
+      <p>{{ item.nom }}</p>
+      <p>{{ item.prix }} €</p>
+      <button (click)="down(item.nom)">-</button>
+      <p>{{ item.quantite }}</p>
+      <button (click)="up(item.nom)">+</button>
+
+      <br />
+      <br />
+      <br />
+    </div>
+  </section>
 </div>
