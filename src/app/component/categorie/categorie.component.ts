@@ -19,7 +19,7 @@ export class CategorieComponent implements OnInit {
   }
 
   GetMyCompo() {
-    return this.Saveur;
+    return this.Saveur?.toLocaleLowerCase();
   }
 
   add(value: any, prix: number) {
