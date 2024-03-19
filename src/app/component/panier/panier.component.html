@@ -1,18 +1,31 @@
 <div id="container_panier">
   <section id="bg"></section>
   <section id="panier">
-    <p (click)="close()">X</p>
-    <div *ngFor="let item of Malister">
-      <p>{{ item.nom }}</p>
-      <p>{{ item.prix }} €</p>
-      <button (click)="down(item.nom)">-</button>
-      <p>{{ item.quantite }}</p>
-      <button (click)="up(item.nom)">+</button>
-      <br />
-      <br />
-      <br />
-    </div>
-    <p>le prix {{ recupsomme() }}</p>
-    <button (click)="SubmitComande()">Submit la commande</button>
+    <article id="fond"></article>
+    <article id="content">
+      <div id="container-top">
+        <h2>Panier</h2>
+        <img (click)="close()" src="../../../assets/icon/close.svg" alt="close">
+      </div>
+      <div *ngFor="let item of Malister">
+        <p>{{ item.nom }}</p>
+        <p>{{ item.prix }} €</p>
+        <button (click)="down(item.nom)">-</button>
+        <p>{{ item.quantite }}</p>
+        <button (click)="up(item.nom)">+</button>
+        <br />
+        <br />
+        <br />
+      </div>
+      <div id="total">
+        <div>
+          <p>Total</p>
+          <p>({{ quantite() }} articles)</p>
+        </div>
+        <p>{{ recupsomme() }} €</p>
+      </div>
+      <button (click)="clear()">Annuler</button>
+      <button (click)="SubmitComande()">Passer commande</button>
+    </article>
   </section>
 </div>

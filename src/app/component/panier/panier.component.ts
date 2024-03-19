@@ -42,4 +42,19 @@ export class PanierComponent implements OnInit {
   SubmitComande() {
     this.APIPOST.PostAPIService();
   }
+
+  clear(){
+    localStorage.removeItem('valuePanier');
+    localStorage.removeItem('InMyPanier');
+    this.close();
+  }
+
+  quantite(){
+    const ValuePanier = localStorage.getItem('valuePanier');
+    if (ValuePanier == null) {
+      return 0;
+    } else {
+      return ValuePanier;
+    }
+  }
 }
