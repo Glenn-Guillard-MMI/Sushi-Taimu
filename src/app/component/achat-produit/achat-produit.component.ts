@@ -44,14 +44,14 @@ export class AchatProduitComponent implements OnInit {
       myProduit!.innerText = (numberActuel - 1).toString();
     }
   }
-  add() {
+  add(img: string) {
     const myProduit = document.getElementById('NumberProduit');
     const myPrix = document.getElementById('MonPrix');
     const numberActuel = parseInt(myProduit!.innerText, 10);
     const prixActuel = parseFloat(myPrix!.innerText);
     myProduit!.innerText = '1';
     if (this.Panier) {
-      this.Panier.add(this.produit, prixActuel, numberActuel);
+      this.Panier.add(this.produit, prixActuel, img, numberActuel);
       this.bloque();
     }
   }

@@ -8,14 +8,14 @@ export class PanierService {
   constructor() {}
   public listeSubject = new BehaviorSubject<any[]>([]);
 
-  add(value: any, prix: any, quantite?: any): any {
+  add(value: any, prix: any, img?: any, quantite?: any): any {
     if (value != undefined && value != '') {
       const myValue: any = localStorage.getItem('valuePanier');
       if (myValue < 10) {
         if (myValue == null) {
           localStorage.setItem('valuePanier', quantite || 1);
           const TheValue: any = {
-            1: { nom: value, prix: prix, quantite: quantite || 1 },
+            1: { nom: value, prix: prix, quantite: quantite || 1, image: img },
           };
           localStorage.setItem('InMyPanier', JSON.stringify(TheValue));
         } else {
@@ -37,6 +37,7 @@ export class PanierService {
             nom: value,
             prix: prix,
             quantite: quantite || 1,
+            image: img,
           };
           json[MyNewValue] = TheValue;
           localStorage.setItem('InMyPanier', JSON.stringify(json));

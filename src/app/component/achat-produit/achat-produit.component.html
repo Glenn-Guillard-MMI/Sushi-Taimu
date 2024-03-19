@@ -24,7 +24,7 @@
         <p id="NumberProduit">1</p>
         <p id="button-plus" (click)="AjoutNumberProduit()">+</p>
       </div>
-      <button (click)="add()" id="submit">Ajouter au panier</button>
+      <button (click)="add(item.image)" id="submit">Ajouter au panier</button>
       <p id="compo">Composition :</p>
       <ul>
         <li *ngFor="let aliment of item.aliments">{{ aliment.nom }}</li>
