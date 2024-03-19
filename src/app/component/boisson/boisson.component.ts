@@ -1,25 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { GetAPIService } from '../../service/get-api.service';
 import { PanierService } from '../../service/panier.service';
 
 @Component({
-  selector: 'app-categorie',
-  templateUrl: './categorie.component.html',
-  styleUrl: './categorie.component.css',
+  selector: 'app-boisson',
+  templateUrl: './boisson.component.html',
+  styleUrl: './boisson.component.css',
 })
-export class CategorieComponent implements OnInit {
+export class BoissonComponent {
   constructor(private get: GetAPIService, private Panier: PanierService) {}
   data: any[] = [];
-  Saveur = localStorage.getItem('composition');
-
   ngOnInit(): void {
-    this.get.getAPIService().subscribe((contenue) => {
+    this.get.getAPIBoissonService().subscribe((contenue) => {
       this.data = contenue;
     });
-  }
-
-  GetMyCompo() {
-    return this.Saveur;
   }
 
   add(value: any, prix: number) {

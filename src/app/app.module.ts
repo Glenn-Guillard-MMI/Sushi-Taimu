@@ -11,6 +11,7 @@ import { SaveursComponent } from './component/saveurs/saveurs.component';
 import { AchatProduitComponent } from './component/achat-produit/achat-produit.component';
 import { CategorieComponent } from './component/categorie/categorie.component';
 import { PanierComponent } from './component/panier/panier.component';
+import { BoissonComponent } from './component/boisson/boisson.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { PanierComponent } from './component/panier/panier.component';
     AchatProduitComponent,
     CategorieComponent,
     PanierComponent,
+    BoissonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

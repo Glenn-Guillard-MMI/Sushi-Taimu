@@ -54,7 +54,7 @@ export class PanierService {
     }
   }
   liste: any[] = [];
-  PannierView() {
+  public PannierView() {
     this.liste = [];
     const MonPanier: any = localStorage.getItem('InMyPanier');
     const json = JSON.parse(MonPanier);
@@ -84,5 +84,15 @@ export class PanierService {
       }
     }
     this.PannierView();
+  }
+
+  somme() {
+    const myValue: any = localStorage.getItem('InMyPanier');
+    const json = JSON.parse(myValue);
+    let rsl = 0;
+    for (const item in json) {
+      rsl += json[item].quantite * json[item].prix;
+    }
+    return rsl;
   }
 }

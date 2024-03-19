@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PanierService } from '../../service/panier.service';
+import { GetAPIService } from '../../service/get-api.service';
 
 @Component({
   selector: 'app-panier',
@@ -7,7 +8,7 @@ import { PanierService } from '../../service/panier.service';
   styleUrl: './panier.component.css',
 })
 export class PanierComponent implements OnInit {
-  constructor(private panier: PanierService) {}
+  constructor(private panier: PanierService, private APIPOST: GetAPIService) {}
   Malister: any[] = [];
   ngOnInit(): void {
     this.panier.listeSubject.subscribe((panier) => {
@@ -32,5 +33,13 @@ export class PanierComponent implements OnInit {
 
   up(object: any) {
     this.panier.add(object, '');
+  }
+
+  recupsomme() {
+    return this.panier.somme();
+  }
+
+  SubmitComande() {
+    this.APIPOST.PostAPIService();
   }
 }
