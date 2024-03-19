@@ -5,9 +5,18 @@
     <article id="content">
       <div id="container-top">
         <h2>Panier</h2>
-        <img (click)="close()" src="../../../assets/icon/close.svg" alt="close">
+        <img
+          (click)="close()"
+          src="../../../assets/icon/close.svg"
+          alt="close"
+        />
       </div>
       <div *ngFor="let item of Malister">
+        <img
+          src="https://guillard.alwaysdata.net/Sushi-taimu/Plat/{{
+            item.image
+          }}.png"
+        />
         <p>{{ item.nom }}</p>
         <p>{{ item.prix }} €</p>
         <button (click)="down(item.nom)">-</button>

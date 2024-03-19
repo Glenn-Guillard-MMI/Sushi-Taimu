@@ -24,7 +24,12 @@
         </a>
         <div class="name">{{ item.nom }}</div>
         <div class="price">{{ item.prix }} €</div>
-        <button (click)="add(item.nom, item.prix)" class="button-add">+</button>
+        <button
+          (click)="add(item.nom, item.prix, item.image)"
+          class="button-add"
+        >
+          +
+        </button>
       </div>
     </div>
   </div>
