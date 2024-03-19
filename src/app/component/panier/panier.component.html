@@ -8,10 +8,11 @@
       <button (click)="down(item.nom)">-</button>
       <p>{{ item.quantite }}</p>
       <button (click)="up(item.nom)">+</button>
-
       <br />
       <br />
       <br />
     </div>
+    <p>le prix {{ recupsomme() }}</p>
+    <button (click)="SubmitComande()">Submit la commande</button>
   </section>
 </div>

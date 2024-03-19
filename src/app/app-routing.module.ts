@@ -5,6 +5,7 @@ import { SectionMenuComponent } from './component/section-menu/section-menu.comp
 import { SaveursComponent } from './component/saveurs/saveurs.component';
 import { AchatProduitComponent } from './component/achat-produit/achat-produit.component';
 import { CategorieComponent } from './component/categorie/categorie.component';
+import { BoissonComponent } from './component/boisson/boisson.component';
 
 const routes: Routes = [
   { path: '', component: SectionIndexComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'saveurs', component: SaveursComponent },
   { path: 'Mon-produit', component: AchatProduitComponent },
   { path: 'composition', component: CategorieComponent },
+  { path: 'boisson', component: BoissonComponent },
 ];
 
 @NgModule({
