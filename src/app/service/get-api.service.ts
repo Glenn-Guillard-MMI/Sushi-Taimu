@@ -25,11 +25,14 @@ export class GetAPIService {
     }
 
     this.http
-      .post('http://localhost:3000/commandes', { prix_t: rsl })
-      .subscribe();
+      .post<{ id: number }>('http://localhost:3000/commandes', { prix_t: rsl })
+      .subscribe((data) => {
+        // const DataId = JSON.parse(data).id;
+        console.log(data.id);
+      });
 
-    localStorage.removeItem('InMyPanier');
-    localStorage.removeItem('valuePanier');
-    window.location.reload();
+    //localStorage.removeItem('InMyPanier');
+    //localStorage.removeItem('valuePanier');
+    //window.location.reload();
   }
 }

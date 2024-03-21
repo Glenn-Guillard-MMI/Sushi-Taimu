@@ -16,10 +16,9 @@ export class BoissonComponent {
     });
   }
 
-  add(value: any, prix: number) {
-    this.Panier.add(value, prix);
+  add(id: any, value: any, prix: number, img: string) {
+    this.Panier.add(id, value, prix, img);
   }
-
   GetPanier() {
     const ValuePanier = localStorage.getItem('valuePanier');
     if (ValuePanier == null) {

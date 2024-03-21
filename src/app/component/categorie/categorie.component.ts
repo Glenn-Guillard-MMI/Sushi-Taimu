@@ -22,8 +22,8 @@ export class CategorieComponent implements OnInit {
     return this.Saveur;
   }
 
-  add(value: any, prix: number, img: string) {
-    this.Panier.add(value, prix, img);
+  add(id: number, value: any, prix: number, img: string) {
+    this.Panier.add(id, value, prix, img);
   }
 
   GetPanier() {
