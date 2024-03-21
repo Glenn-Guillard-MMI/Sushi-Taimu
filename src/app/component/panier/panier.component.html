@@ -6,15 +6,22 @@
       <div id="container-top-top">
         <div id="container-top">
           <h2>Panier</h2>
-          <img id="cross" (click)="close()" src="../../../assets/icon/close.svg" alt="close" />
+          <img
+            id="cross"
+            (click)="close()"
+            src="../../../assets/icon/close.svg"
+            alt="close"
+          />
         </div>
       </div>
       <div id="containerAll-product">
         <div class="container-product" *ngFor="let item of Malister">
           <div class="container-img">
-            <img src="https://guillard.alwaysdata.net/Sushi-taimu/Plat/{{
-              item.image
-            }}.png" />
+            <img
+              src="https://guillard.alwaysdata.net/Sushi-taimu/Plat/{{
+                item.image
+              }}.png"
+            />
           </div>
           <div class="container-info">
             <p class="name">{{ item.nom }}</p>
@@ -22,7 +29,7 @@
             <div class="manage">
               <p class="button-minus" (click)="down(item.nom)">-</p>
               <p class="quantity">{{ item.quantite }}</p>
-              <p class="button-plus" (click)="up(item.nom)">+</p>
+              <p class="button-plus" (click)="up(item.id, item.nom)">+</p>
             </div>
           </div>
         </div>

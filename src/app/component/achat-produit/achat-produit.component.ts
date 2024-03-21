@@ -49,9 +49,16 @@ export class AchatProduitComponent implements OnInit {
     const myPrix = document.getElementById('MonPrix');
     const numberActuel = parseInt(myProduit!.innerText, 10);
     const prixActuel = parseFloat(myPrix!.innerText);
+    const id = document.getElementById('valueID') as HTMLInputElement;
     myProduit!.innerText = '1';
     if (this.Panier) {
-      this.Panier.add(this.produit, prixActuel, img, numberActuel);
+      this.Panier.add(
+        parseInt(id.value),
+        this.produit,
+        prixActuel,
+        img,
+        numberActuel
+      );
       this.bloque();
     }
   }
