@@ -3,38 +3,65 @@
   <section id="panier">
     <article id="fond"></article>
     <article id="content">
-      <div id="container-top">
-        <h2>Panier</h2>
-        <img
-          (click)="close()"
-          src="../../../assets/icon/close.svg"
-          alt="close"
-        />
+      <div id="container-top-top">
+        <div id="container-top">
+          <h2>Panier</h2>
+          <img id="cross" (click)="close()" src="../../../assets/icon/close.svg" alt="close" />
+        </div>
       </div>
-      <div *ngFor="let item of Malister">
-        <img
-          src="https://guillard.alwaysdata.net/Sushi-taimu/Plat/{{
+      <div class="container-product" *ngFor="let item of Malister">
+        <div class="container-img">
+          <img src="https://guillard.alwaysdata.net/Sushi-taimu/Plat/{{
             item.image
-          }}.png"
-        />
-        <p>{{ item.nom }}</p>
-        <p>{{ item.prix }} €</p>
-        <button (click)="down(item.nom)">-</button>
-        <p>{{ item.quantite }}</p>
-        <button (click)="up(item.nom)">+</button>
-        <br />
-        <br />
-        <br />
+          }}.png" />
+        </div>
+        <div class="container-info">
+          <p class="name">{{ item.nom }}</p>
+          <p class="price">{{ item.prix }} €</p>
+          <div class="manage">
+            <p class="button-minus" (click)="down(item.nom)">-</p>
+            <p>{{ item.quantite }}</p>
+            <p class="button-plus" (click)="up(item.nom)">+</p>
+          </div>
+        </div>
       </div>
       <div id="total">
         <div>
           <p>Total</p>
           <p>({{ quantite() }} articles)</p>
         </div>
-        <p>{{ recupsomme() }} €</p>
+        <p>{{ recupsomme().toFixed(2) }} €</p>
       </div>
-      <button (click)="clear()">Annuler</button>
-      <button (click)="SubmitComande()">Passer commande</button>
+      <div id="container-button">
+        <p id="annule" (click)="annulation()">Annuler</p>
+        <p id="passeComm" (click)="confirmation()">Passer commande</p>
+      </div>
     </article>
   </section>
+</div>
+
+<div id="msgAnnul">
+  <div>
+    <div class="bgConfirm"></div>
+    <div class="container-confirm">
+      <p>Etes vous sur de vouloir annuler la commande ?</p>
+      <div class="containerBuConf">
+        <p (click)="annulConfAnnu()" class="annBu">Annuler</p>
+        <p (click)="clear()" class="confBu">Confirmer</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="msgComm">
+  <div>
+    <div class="bgConfirm"></div>
+    <div class="container-confirm">
+      <p>Etes vous sur de vouloir finaliser la commande ?</p>
+      <div class="containerBuConf">
+        <p (click)="annulConfAnnu()" class="annBu">Annuler</p>
+        <p (click)="SubmitComande()" class="confBu">Confirmer</p>
+      </div>
+    </div>
+  </div>
 </div>

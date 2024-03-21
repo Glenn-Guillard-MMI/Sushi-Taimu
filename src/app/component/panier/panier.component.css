@@ -1,4 +1,4 @@
-#bg{
+#bg {
     user-select: none;
     position: fixed;
     top: 0;
@@ -12,19 +12,19 @@
     display: none;
 }
 
-#content{
+#content {
     position: relative;
     z-index: 10;
     min-width: 100%;
     min-height: 100%;
 }
 
-#fond{
-    width: 100%;
+#fond {
+    width: 40vw;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     background-image: url("../../../assets/img/fond.jpg");
     background-position: center;
     background-size: 200% 200%;
@@ -33,7 +33,7 @@
     z-index: 1;
 }
 
-#panier{
+#panier {
     position: absolute;
     right: 0;
     top: 0;
@@ -45,7 +45,7 @@
     color: #333;
 }
 
-#container_panier{
+#container_panier {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -54,15 +54,18 @@
     scale: 0;
 }
 
-#container-top{
+#container-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
     width: 90%;
     margin: 1vw auto;
+}
+
+#cross {
     position: fixed;
-    top: 0;
-    right: 0;
+    right: 1%;
 }
 
 #container-top img {
@@ -70,26 +73,27 @@
     cursor: pointer;
 }
 
-h2{
+h2 {
     font-size: 2.7vw;
 }
 
-#total, #total div{
+#total,
+#total div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-#total div{
+#total div {
     width: 35%;
 }
 
-#total div p:first-child{
+#total div p:first-child {
     font-size: 2vw;
 }
 
-#total div p:last-child{
+#total div p:last-child {
     color: #90322B;
     font-weight: 200 !important;
     font-size: 1vw;
@@ -102,4 +106,186 @@ h2{
 
 #total p {
     font-size: 2vw;
+}
+
+.container-product {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 2% auto;
+}
+
+.container-img {
+    width: 25%;
+    margin-right: 2vw;
+}
+
+.container-img img {
+    width: 100%;
+    filter: drop-shadow(0px 4px 25px #00000066);
+}
+
+.price {
+    color: #90322B;
+    font-size: 0.8em;
+}
+
+.name {
+    font-size: 1.2em;
+}
+
+.manage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-info{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    margin: auto 0;
+}
+
+.button-minus, .button-plus{
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-size: 1vw;
+    width: 2em;
+    height: 2em;
+    line-height: 1.6em;
+    user-select: none;
+}
+
+.button-minus{
+    color: #DC6157;
+    background: transparent;
+    border: #DC6157 solid 2px;
+    margin-right: 5%;
+}
+
+.button-plus{
+    background: #DC6157;
+    color: #FEF0E0;
+    border: none;
+    margin-left: 5%;
+    line-height: 2em !important;
+}
+
+#container-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5vh 0;
+}
+
+#annule{
+    border: 2px solid #333;
+    padding: 0.7em 1.2em;
+    border-radius: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#annule:hover{
+    background: #FEF0E0;
+}
+
+#passeComm:hover{
+    background: #90322B;
+}
+
+#passeComm{
+    padding: 0.7em 1.2em;
+    border-radius: 10px;
+    background: #DC6157;
+    color: #FEF0E0;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+
+#msgAnnul, #msgComm{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FEF0E0;
+    width: 35vw;
+    height: 25vh;
+    border-radius: 15px;
+    border: 2px solid #DC6157;
+    padding: 1em;
+    display: none;
+}
+
+.bgConfirm{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-image: url("../../../assets/img/fond.jpg");
+    background-position: center;
+    background-size: 200% 200%;
+    background-repeat: repeat;
+    opacity: 0.3;
+    z-index: 5;
+}
+
+.container-confirm{
+    z-index: 10;
+    height: 100%;
+    position: relative;
+}
+
+.container-confirm p {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.containerBuConf{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 75%;
+    margin: 1em auto 0 auto;
+    color: #333;
+}
+
+.containerBuConf p {
+    width: fit-content;
+}
+
+.confBu{
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    background: #DC6157;
+    color: #FEF0E0;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.annBu:hover{
+    background: #FEF0E0;
+}
+
+.confBu:hover{
+    background: #90322B;
+}
+
+.annBu{
+    border: 2px solid #333;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.2s ease;
 }

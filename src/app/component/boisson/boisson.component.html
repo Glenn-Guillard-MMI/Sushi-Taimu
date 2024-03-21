@@ -12,15 +12,9 @@
 <div class="container-box">
   <div *ngFor="let item of data">
     <div class="mini-container">
-      <a routerLink="/Mon-produit" (click)="ProduitSelected(item.nom)">
-        <img
-          src="https://guillard.alwaysdata.net/Sushi-taimu/Plat/{{
+      <img src="https://guillard.alwaysdata.net/Sushi-taimu/Plat/{{
             item.image
-          }}.png"
-          alt="box-{{ item.nom }}"
-          class="img-box"
-        />
-      </a>
+          }}.png" alt="box-{{ item.nom }}" class="img-box" />
       <div class="name">{{ item.nom }}</div>
       <div class="price">{{ item.prix }} €</div>
       <button (click)="add(item.nom, item.prix)" class="button-add">+</button>
