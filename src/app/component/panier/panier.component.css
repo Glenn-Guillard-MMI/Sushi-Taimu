@@ -1,4 +1,4 @@
-#bg{
+#bg {
     user-select: none;
     position: fixed;
     top: 0;
@@ -12,19 +12,19 @@
     display: none;
 }
 
-#content{
+#content {
     position: relative;
     z-index: 10;
     min-width: 100%;
     min-height: 100%;
 }
 
-#fond{
-    width: 100%;
+#fond {
+    width: 40vw;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     background-image: url("../../../assets/img/fond.jpg");
     background-position: center;
     background-size: 200% 200%;
@@ -33,7 +33,7 @@
     z-index: 1;
 }
 
-#panier{
+#panier {
     position: absolute;
     right: 0;
     top: 0;
@@ -45,7 +45,7 @@
     color: #333;
 }
 
-#container_panier{
+#container_panier {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -54,15 +54,18 @@
     scale: 0;
 }
 
-#container-top{
+#container-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
     width: 90%;
     margin: 1vw auto;
+}
+
+#cross {
     position: fixed;
-    top: 0;
-    right: 0;
+    right: 1%;
 }
 
 #container-top img {
@@ -70,26 +73,27 @@
     cursor: pointer;
 }
 
-h2{
+h2 {
     font-size: 2.7vw;
 }
 
-#total, #total div{
+#total,
+#total div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-#total div{
+#total div {
     width: 35%;
 }
 
-#total div p:first-child{
+#total div p:first-child {
     font-size: 2vw;
 }
 
-#total div p:last-child{
+#total div p:last-child {
     color: #90322B;
     font-weight: 200 !important;
     font-size: 1vw;
@@ -102,4 +106,449 @@ h2{
 
 #total p {
     font-size: 2vw;
+}
+
+.container-product {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 2% auto;
+}
+
+.container-img {
+    width: 25%;
+    margin-right: 2vw;
+}
+
+.container-img img {
+    width: 100%;
+    filter: drop-shadow(0px 4px 25px #00000066);
+}
+
+.price {
+    color: #90322B;
+    font-size: 0.8em;
+}
+
+.name {
+    font-size: 1.2em;
+}
+
+.manage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    margin: auto 0;
+}
+
+.button-minus,
+.button-plus {
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-size: 1vw;
+    width: 2em;
+    height: 2em;
+    line-height: 1.6em;
+    user-select: none;
+}
+
+.button-minus {
+    color: #DC6157;
+    background: transparent;
+    border: #DC6157 solid 2px;
+    margin-right: 5%;
+}
+
+.button-plus {
+    background: #DC6157;
+    color: #FEF0E0;
+    border: none;
+    margin-left: 5%;
+    line-height: 2em !important;
+}
+
+#container-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3vh 0;
+}
+
+#annule {
+    border: 2px solid #333;
+    padding: 0.7em 1.2em;
+    border-radius: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#annule:hover {
+    background: #FEF0E0;
+}
+
+#passeComm:hover {
+    background: #90322B;
+}
+
+#passeComm {
+    padding: 0.7em 1.2em;
+    border-radius: 10px;
+    background: #DC6157;
+    color: #FEF0E0;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#msgAnnul>div,
+#msgComm>div {
+    height: 100%;
+}
+
+#msgAnnul,
+#msgComm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FEF0E0;
+    width: 35vw;
+    height: 25vh;
+    border-radius: 15px;
+    border: 2px solid #DC6157;
+    padding: 1em;
+    display: none;
+}
+
+.bgConfirm {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-image: url("../../../assets/img/fond.jpg");
+    background-position: center;
+    background-size: 200% 200%;
+    background-repeat: repeat;
+    opacity: 0.3;
+    z-index: 5;
+}
+
+.container-confirm {
+    z-index: 10;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-confirm p {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+.containerBuConf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 75%;
+    margin: 1em auto 0 auto;
+    color: #333;
+}
+
+.containerBuConf p {
+    width: fit-content;
+}
+
+.confBu {
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    background: #DC6157;
+    color: #FEF0E0;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.annBu:hover {
+    background: #FEF0E0;
+}
+
+.confBu:hover {
+    background: #90322B;
+}
+
+.annBu {
+    border: 2px solid #333;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#container-total>div {
+    position: relative;
+    width: 100%;
+    height: 100% !important;
+}
+
+.bg-total {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../../../assets/img/fond.jpg");
+    background-position: center;
+    background-size: 200% 200%;
+    background-repeat: repeat;
+    opacity: 0.3;
+    z-index: 5;
+}
+
+#containerAll-product {
+    padding-bottom: 25vh;
+}
+
+#mini-cont-total {
+    box-shadow: 0px -4px 24px 0px #00000040;
+    padding-top: 1em;
+    z-index: 10;
+    height: 100%;
+    position: relative;
+}
+
+#container-total {
+    position: fixed;
+    width: 40vw;
+    bottom: 0;
+    right: 0;
+    background: #FEF0E0;
+}
+
+@media screen and (min-width: 1921px) {
+
+    #annule,
+    #passeComm {
+        font-size: 2.5em;
+        border-radius: 15px;
+    }
+
+    .name {
+        font-size: 2em;
+    }
+
+    .price {
+        font-size: 1.7em;
+    }
+
+    .quantity {
+        font-size: 1.4em;
+    }
+
+    .container-confirm p {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    #msgAnnul,
+    #msgComm {
+        width: 80%;
+        height: 20%;
+    }
+
+    .container-confirm p {
+        font-size: 2em;
+    }
+
+    #panier {
+        width: 100%;
+    }
+
+    #fond {
+        width: 100%;
+    }
+
+    #container-total {
+        width: 100%;
+    }
+
+    #total div {
+        width: 40%;
+    }
+
+    #total div p:first-child {
+        font-size: 5vw;
+    }
+
+    #total div p:last-child {
+        font-size: 3vw;
+    }
+
+    #total p {
+        font-size: 4vw;
+    }
+
+    #annule,
+    #passeComm {
+        font-size: 2em;
+        border-radius: 15px;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    #cross {
+        width: 8vw;
+    }
+
+    .name {
+        font-size: 2.5em;
+    }
+
+    .price {
+        font-size: 2.2em;
+    }
+
+    .quantity {
+        font-size: 1.9em;
+    }
+
+    .button-plus,
+    .button-minus {
+        font-size: 2em;
+    }
+
+    #container-button {
+        padding: 2vh 0;
+    }
+}
+
+@media screen and (max-width: 825px) {
+
+    .container-confirm p {
+        font-size: 1.4em;
+    }
+
+    .name {
+        font-size: 1.8em;
+    }
+
+    .price {
+        font-size: 1.6em;
+    }
+
+    .quantity {
+        font-size: 1.3em;
+    }
+
+    .button-plus,
+    .button-minus {
+        font-size: 1.3em;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .container-confirm p {
+        font-size: 1.4em;
+    }
+
+    .name {
+        font-size: 1.6em;
+    }
+
+    .price {
+        font-size: 1.4em;
+    }
+
+    .quantity {
+        font-size: 1.2em;
+    }
+
+    .button-plus,
+    .button-minus {
+        font-size: 1.2em;
+    }
+    #annule,
+    #passeComm {
+        font-size: 1.2em;
+        border-radius: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container-confirm p {
+        font-size: 1em;
+    }
+
+    .name {
+        font-size: 1.3em;
+    }
+
+    .price {
+        font-size: 1.1em;
+    }
+
+    .quantity {
+        font-size: 0.9em;
+    }
+
+    .button-plus,
+    .button-minus {
+        font-size: 0.9em;
+    }
+    #annule,
+    #passeComm {
+        font-size: 1em;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container-confirm p {
+        font-size: 0.6em;
+    }
+
+    .annBu, .confBu{
+        border-radius: 6px;
+    }
+
+    .name {
+        font-size: 1em;
+    }
+
+    .price {
+        font-size: 0.8em;
+    }
+
+    .quantity {
+        font-size: 0.6em;
+    }
+
+    .button-plus,
+    .button-minus {
+        font-size: 0.6em;
+    }
+    #annule,
+    #passeComm {
+        font-size: 0.7em;
+    }
 }

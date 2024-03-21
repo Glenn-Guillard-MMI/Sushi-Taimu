@@ -49,5 +49,6 @@ export class CategorieComponent implements OnInit {
       container.style.scale = '1';
     }
     this.Panier.PannierView();
+    document.body.style.overflow = 'hidden';
   }
 }
