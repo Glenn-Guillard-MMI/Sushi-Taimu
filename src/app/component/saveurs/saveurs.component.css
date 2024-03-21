@@ -6,11 +6,11 @@
   justify-content: center;
 }
 
-.mini-container{
+.mini-container {
   position: relative;
 }
 
-.container-info{
+.container-info {
   width: 20vw;
 }
 
@@ -118,4 +118,143 @@ h1 {
   translate: -50% -40%;
   color: #dc6157;
   font-size: 1.25vw;
+}
+
+@media screen and (max-width: 1080px) {
+  h1 {
+    font-size: 4.5em;
+  }
+
+  .container-info {
+    width: 35vw;
+  }
+
+  #back .text-back:last-child {
+    display: none;
+  }
+
+  #back .text-back:first-child {
+    margin: 0 0.5em;
+    font-size: 2em;
+  }
+
+  #back {
+    border-width: 3px;
+  }
+
+  #cart {
+    width: 10vw;
+    padding: 1.5vw 1.6vw;
+    left: 85%;
+    top: 92%;
+  }
+
+  #cart p {
+    font-size: 2vw;
+  }
+
+  .button-add {
+    top: 55%;
+    width: 1.75em;
+    height: 1.75em;
+    font-size: 1.75em;
+  }
+
+  .name {
+    font-size: 2em;
+  }
+
+  .price {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .button-add {
+    width: 1.6em;
+    height: 1.6em;
+    font-size: 1.4em;
+  }
+
+  .name {
+    font-size: 1.5em;
+  }
+  .price{
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .button-add {
+    width: 1.4em;
+    height: 1.4em;
+    font-size: 1.2em;
+  }
+  #cart {
+    padding: 1.5vw 1.8vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .name{
+    font-size: 1em;
+  }
+  .price{
+    font-size: 0.8em;
+  }
+  .button-add {
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 0.8em;
+  }
+  h1{
+    font-size: 3em;
+  }
+
+  #back .text-back:first-child{
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .name{
+    font-size: 0.6em;
+  }
+  .price{
+    font-size: 0.5em;
+  }
+  .button-add {
+    font-size: 0.6em;
+  }
+  h1{
+    font-size: 2em;
+  }
+
+  #back .text-back:first-child{
+    font-size: 1em;
+  }
+
+  #back{
+    padding: 0.5em;
+    border-width: 2px;
+  }
+}
+
+@media screen and (min-width: 1921px){
+  .name{
+    font-size: 2em;
+  }
+  .price{
+    font-size: 1.7em;
+  }
+
+  .button-add{
+    font-size: 1.7em;
+  }
+  .text-back{
+    font-size: 2em;
+  }
+  #back{
+    border-width: 2px;
+  }
 }
