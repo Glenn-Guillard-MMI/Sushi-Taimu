@@ -9,32 +9,41 @@
           <img id="cross" (click)="close()" src="../../../assets/icon/close.svg" alt="close" />
         </div>
       </div>
-      <div class="container-product" *ngFor="let item of Malister">
-        <div class="container-img">
-          <img src="https://guillard.alwaysdata.net/Sushi-taimu/Plat/{{
-            item.image
-          }}.png" />
-        </div>
-        <div class="container-info">
-          <p class="name">{{ item.nom }}</p>
-          <p class="price">{{ item.prix }} €</p>
-          <div class="manage">
-            <p class="button-minus" (click)="down(item.nom)">-</p>
-            <p>{{ item.quantite }}</p>
-            <p class="button-plus" (click)="up(item.nom)">+</p>
+      <div id="containerAll-product">
+        <div class="container-product" *ngFor="let item of Malister">
+          <div class="container-img">
+            <img src="https://guillard.alwaysdata.net/Sushi-taimu/Plat/{{
+              item.image
+            }}.png" />
+          </div>
+          <div class="container-info">
+            <p class="name">{{ item.nom }}</p>
+            <p class="price">{{ item.prix }} €</p>
+            <div class="manage">
+              <p class="button-minus" (click)="down(item.nom)">-</p>
+              <p class="quantity">{{ item.quantite }}</p>
+              <p class="button-plus" (click)="up(item.nom)">+</p>
+            </div>
           </div>
         </div>
       </div>
-      <div id="total">
+      <div id="container-total">
         <div>
-          <p>Total</p>
-          <p>({{ quantite() }} articles)</p>
+          <div class="bg-total"></div>
+          <div id="mini-cont-total">
+            <div id="total">
+              <div>
+                <p>Total</p>
+                <p>({{ quantite() }} articles)</p>
+              </div>
+              <p>{{ recupsomme().toFixed(2) }} €</p>
+            </div>
+            <div id="container-button">
+              <p id="annule" (click)="annulation()">Annuler</p>
+              <p id="passeComm" (click)="confirmation()">Passer commande</p>
+            </div>
+          </div>
         </div>
-        <p>{{ recupsomme().toFixed(2) }} €</p>
-      </div>
-      <div id="container-button">
-        <p id="annule" (click)="annulation()">Annuler</p>
-        <p id="passeComm" (click)="confirmation()">Passer commande</p>
       </div>
     </article>
   </section>
