@@ -31,6 +31,9 @@ export class PanierComponent implements OnInit {
   }
   down(produit: any) {
     this.panier.downSup(produit);
+    if (localStorage.getItem('valuePanier') == null || localStorage.getItem('valuePanier') == '0'){
+      this.close()
+    }
   }
 
   up(id: number, object: any) {
