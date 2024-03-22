@@ -97,5 +97,4 @@ Ces deux architectures sont disponibles sur le [FigJam](https://www.figma.com/fi
 
 La partie administration du site à été fait par Thomas Henry. Il a été fait en php est disponible sur le [GitHub](https://github.com/S4m0htTT/Sushi-Taimu-Admin)
 
-_Ecrit par: Glenn Guillard_
-_Le 22/02/2024_
+_Ecrit par: Glenn Guillard le 22/02/2024_

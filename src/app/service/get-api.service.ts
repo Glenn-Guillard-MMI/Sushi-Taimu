@@ -23,16 +23,38 @@ export class GetAPIService {
     for (const item in json) {
       rsl += json[item].quantite * json[item].prix;
     }
-
     this.http
       .post<{ id: number }>('http://localhost:3000/commandes', { prix_t: rsl })
       .subscribe((data) => {
-        // const DataId = JSON.parse(data).id;
-        console.log(data.id);
+        const json2 = JSON.parse(myValue);
+        const idcom = data.id;
+        for (const ids in json2) {
+          let monid: string = json2[ids].id.toString();
+          if (monid.startsWith('boisson_')) {
+            let idboisson: string = json2[ids].id;
+            idboisson = idboisson.charAt(idboisson.length - 1);
+            this.http
+              .post('http://localhost:3000/commandes/btc', {
+                comId: idcom,
+                boiId: parseInt(idboisson),
+              })
+              .subscribe();
+          } else {
+            let idalim: string = json2[ids].id;
+            console.log(idalim);
+            this.http
+              .post('http://localhost:3000/commandes/btc', {
+                comId: idcom,
+                boxId: parseInt(idalim),
+              })
+              .subscribe();
+          }
+        }
+        alert('votre num de commande est :' + idcom);
       });
 
-    //localStorage.removeItem('InMyPanier');
-    //localStorage.removeItem('valuePanier');
-    //window.location.reload();
+    localStorage.removeItem('InMyPanier');
+    localStorage.removeItem('valuePanier');
+    window.location.reload();
   }
 }
