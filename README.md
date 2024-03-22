@@ -66,3 +66,36 @@ Avant que Jérôme Fabre puisse commencer l'API, il a d'abord dû réaliser la c
 
 Jérôme Fabre a choisi d'utiliser le langage Node.ts afin de sortir de sa zone de confort. Il a donc dû apprendre tout le langage Node afin de réussir à créer l'API.
 L'API est disponible sur le GitHub suivant : [GitHub](https://github.com/JeromeFabre77/Shushi-Taimu_REST-API_NodeJS)
+
+# USE case & diagrame d'activité
+
+## USE case
+
+![USE CASE](documentation/Use%20case.png)
+
+## diagrame d'activité
+
+![Diagrame d'activité](documentation/Diagrame%20d'activité.png)
+
+Valentin Lamour s'est occupé de réaliser le cas d'utilisation ainsi que le diagramme d'activité de cette SAE, qu'il avait déjà fait lorsqu'il était au lycée.
+Le use case et le diagrame d'activité sont disponible sur [FigJam](https://www.figma.com/file/jdlV5JjdfUuJKkB8ys68Qw/Diagramme?type=whiteboard&node-id=0-1&t=mMWREuG7R7GUgmKT-0)
+
+# Architecture fonctionnelle et des différents codes
+
+## Architecture fonctionnelle
+
+![Architecture fonctionnelle](documentation/Architecture%20fonctionnelle.png)
+
+## Architecture des différents codes
+
+![Architecture fonctionnelle](documentation/Architecture%20des%20différents%20codes.png)
+
+Glenn Guillard s'est occupé de créer l'architecture fonctionnelle ainsi que l'architecture des différents codes.
+Ces deux architectures sont disponibles sur le [FigJam](https://www.figma.com/file/GwrtXbRim8uxyCA61L570m/Architecture?type=whiteboard&node-id=0%3A1&t=MEeJ7FTShM4SAOQU-1).
+
+# Administration
+
+La partie administration du site à été fait par Thomas Henry. Il a été fait en php est disponible sur le [GitHub](https://github.com/S4m0htTT/Sushi-Taimu-Admin)
+
+_Ecrit par: Glenn Guillard_
+_Le 22/02/2024_
