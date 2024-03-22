@@ -6,6 +6,7 @@ import { SaveursComponent } from './component/saveurs/saveurs.component';
 import { AchatProduitComponent } from './component/achat-produit/achat-produit.component';
 import { CategorieComponent } from './component/categorie/categorie.component';
 import { BoissonComponent } from './component/boisson/boisson.component';
+import { RGPDComponent } from './component/rgpd/rgpd.component';
 
 const routes: Routes = [
   { path: '', component: SectionIndexComponent },
@@ -14,10 +15,11 @@ const routes: Routes = [
   { path: 'Mon-produit', component: AchatProduitComponent },
   { path: 'composition', component: CategorieComponent },
   { path: 'boisson', component: BoissonComponent },
+  { path: 'rgpd', component: RGPDComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
