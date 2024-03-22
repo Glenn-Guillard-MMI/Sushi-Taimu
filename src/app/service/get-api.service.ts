@@ -30,7 +30,7 @@ export class GetAPIService {
         // const DataId = JSON.parse(data).id;
         console.log(data.id);
       });
-
+      // Oublit pas de réactiver ca SVP
     //localStorage.removeItem('InMyPanier');
     //localStorage.removeItem('valuePanier');
     //window.location.reload();
