@@ -12,6 +12,8 @@ import { AchatProduitComponent } from './component/achat-produit/achat-produit.c
 import { CategorieComponent } from './component/categorie/categorie.component';
 import { PanierComponent } from './component/panier/panier.component';
 import { BoissonComponent } from './component/boisson/boisson.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { RGPDComponent } from './component/rgpd/rgpd.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { BoissonComponent } from './component/boisson/boisson.component';
     CategorieComponent,
     PanierComponent,
     BoissonComponent,
+    FooterComponent,
+    RGPDComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

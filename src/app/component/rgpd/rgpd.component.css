@@ -1,0 +1,58 @@
+div {
+    width: 90%;
+    margin: 2vw auto;
+    color: #333;
+}
+
+#mail {
+    color: #90322B;
+    transition: color 0.25s ease;
+}
+
+#mail:hover {
+    color: #DC6157;
+}
+
+p {
+    margin-left: 1em;
+    margin-top: 0.5em;
+    font-size: 1.1vw;
+}
+
+h2 {
+    margin-top: 1em;
+    font-size: 1.7vw;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+#miseJ {
+    margin-top: 2em;
+}
+
+#back {
+    border: 1px solid #333333;
+    display: flex;
+    text-decoration: none;
+    width: fit-content;
+    padding: 1em 1em;
+    border-radius: 15px;
+    margin-left: 2%;
+    transition: background 250ms ease-in-out;
+}
+
+.text-back {
+    color: #333333;
+    margin: 0;
+}
+
+#back p:first-child {
+    margin-right: 1em;
+}
+
+#back:hover {
+    background: #fef0e0;
+}

@@ -40,15 +40,19 @@ export class SaveursComponent implements OnInit {
   }
 
   open() {
-    const bg = document.getElementById('bg');
-    const panier = document.getElementById('panier');
-    const container = document.getElementById('container_panier');
-    if (bg && panier && container) {
-      bg.style.display = 'block';
-      panier.style.display = 'block';
-      container.style.scale = '1';
+    if (localStorage.getItem('valuePanier') == null || localStorage.getItem('valuePanier') == '0'){
+      return
+    }else{
+      const bg = document.getElementById('bg');
+      const panier = document.getElementById('panier');
+      const container = document.getElementById('container_panier');
+      if (bg && panier && container) {
+        bg.style.display = 'block';
+        panier.style.display = 'block';
+        container.style.scale = '1';
+      }
+      this.Panier.PannierView();
+      document.body.style.overflow = 'hidden';
     }
-    this.Panier.PannierView();
-    document.body.style.overflow = 'hidden';
   }
 }
