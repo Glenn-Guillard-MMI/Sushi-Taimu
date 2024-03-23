@@ -64,7 +64,7 @@ Avant que Jérôme Fabre puisse commencer l'API, il a d'abord dû réaliser la c
 
 ## API REST
 
-Jérôme Fabre a choisi d'utiliser le langage Node.ts afin de sortir de sa zone de confort. Il a donc dû apprendre tout le langage Node afin de réussir à créer l'API.
+Jérôme Fabre a choisi d'utiliser le framework Node.js avec le langage TypeScript afin de sortir de sa zone de confort. Il a donc dû apprendre tout le langage Node afin de réussir à créer l'API.
 L'API est disponible sur le GitHub suivant : [GitHub](https://github.com/JeromeFabre77/Shushi-Taimu_REST-API_NodeJS)
 
 # USE case & diagrame d'activité
@@ -93,8 +93,18 @@ Le use case et le diagrame d'activité sont disponible sur [FigJam](https://www.
 Glenn Guillard s'est occupé de créer l'architecture fonctionnelle ainsi que l'architecture des différents codes.
 Ces deux architectures sont disponibles sur le [FigJam](https://www.figma.com/file/GwrtXbRim8uxyCA61L570m/Architecture?type=whiteboard&node-id=0%3A1&t=MEeJ7FTShM4SAOQU-1).
 
+# Scénarios malveillants et mesures pour les contrecarrer
+
+Ces scénarios ont été rédigés par Thomas Henry dans le but de mettre en évidence certaines failles que des personnes malveillantes pourraient exploiter. De plus, des mesures ont été prises pour garantir la sécurité du site.
+Lien du [Google doc](https://docs.google.com/document/d/1cn9JOwKrNjFW9-s0_Sc5ZqXu5CGTGibhUwCCUrN_Soc/edit?usp=sharing)
+
 # Administration
 
-La partie administration du site à été fait par Thomas Henry. Il a été fait en php est disponible sur le [GitHub](https://github.com/S4m0htTT/Sushi-Taimu-Admin)
+La partie administration du site à été fait par Thomas Henry. Il a été fait en php. Il est disponible sur le [GitHub](https://github.com/S4m0htTT/Sushi-Taimu-Admin)
 
-_Ecrit par: Glenn Guillard le 22/02/2024_
+# Tests unitaires (bonnus)
+
+Les tests unitaires ont été réalisés par Glenn Guillard. Pour ce faire, il a créé des tests dans les fichiers spec du service Panier, qui est le service principal de l'application.
+Lien du [Google doc](https://docs.google.com/document/d/1ON3YsklWcig6yD-eJX_JGFZqtNWLkjDzZdRp5eSQcjE/edit?usp=sharing)
+
+_Ecrit par: Glenn Guillard le 23/02/2024_
