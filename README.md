@@ -102,7 +102,7 @@ Lien du [Google doc](https://docs.google.com/document/d/1cn9JOwKrNjFW9-s0_Sc5ZqX
 
 La partie administration du site à été fait par Thomas Henry. Il a été fait en php. Il est disponible sur le [GitHub](https://github.com/S4m0htTT/Sushi-Taimu-Admin)
 
-# Tests unitaires (bonnus)
+# Tests unitaires (bonus)
 
 Les tests unitaires ont été réalisés par Glenn Guillard. Pour ce faire, il a créé des tests dans les fichiers spec du service Panier, qui est le service principal de l'application.
 Lien du [Google doc](https://docs.google.com/document/d/1ON3YsklWcig6yD-eJX_JGFZqtNWLkjDzZdRp5eSQcjE/edit?usp=sharing)
