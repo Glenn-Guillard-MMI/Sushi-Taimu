@@ -9,7 +9,7 @@ export class PanierService {
   public listeSubject = new BehaviorSubject<any[]>([]);
 
   add(id: any, value: any, prix: any, img?: any, quantite?: any): any {
-    if (value != undefined && value != '' && prix != '') {
+    if (value != undefined && value != '') {
       const myValue: any = localStorage.getItem('valuePanier');
       if (myValue < 10) {
         if (myValue == null) {

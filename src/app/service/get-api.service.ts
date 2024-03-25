@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, timeout } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -52,9 +52,10 @@ export class GetAPIService {
         }
         alert('votre num de commande est :' + idcom);
       });
-
-    localStorage.removeItem('InMyPanier');
-    localStorage.removeItem('valuePanier');
-    window.location.reload();
+    setTimeout(() => {
+      localStorage.removeItem('InMyPanier');
+      localStorage.removeItem('valuePanier');
+      window.location.reload();
+    }, 500);
   }
 }
